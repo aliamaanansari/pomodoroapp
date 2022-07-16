@@ -1,0 +1,28 @@
+.task {
+  background-color: #d6d9e1;
+
+  height: 4rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.taskInput {
+  border-radius: 1rem;
+  color: #3c5898;
+  width: 8rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0px 0.5rem;
+  margin: 0px;
+  border: none;
+  background: none;
+  line-height: 2rem;
+}
+.iconWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  justify-content: space-around;
+}
