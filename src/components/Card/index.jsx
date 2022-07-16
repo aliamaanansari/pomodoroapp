@@ -21,18 +21,12 @@ const Card = ({ taskobj, index, deleteTask, openEditModal }) => {
         </div>
       </Link>
       <div className={styles.icon}>
-        <div className={styles.actionCTA}>
-          <FaEdit
-            className={styles.actionIcon}
-            onClick={() => openEditModal(index)}
-          />
+        <div onClick={() => openEditModal(index)} className={styles.actionCTA}>
+          <FaEdit className={styles.actionIcon} />
           <div>Edit</div>
         </div>
-        <div className={styles.actionCTA}>
-          <FaRegWindowClose
-            className={styles.actionIcon}
-            onClick={handleDelete}
-          />
+        <div onClick={handleDelete} className={styles.actionCTA}>
+          <FaRegWindowClose className={styles.actionIcon} />
           <div>Delete</div>
         </div>
 

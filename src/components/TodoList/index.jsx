@@ -80,8 +80,8 @@ const TodoList = () => {
         <div className={styles.headerContainer}>
           <div className={styles.toDoContainer}>
             <h3>Tasks to be done...</h3>
-            <div className={styles.todoListIcon}>
-              <FaPlusSquare onClick={openModal} />
+            <div onClick={openModal} className={styles.todoListIcon}>
+              <FaPlusSquare />
               <div className={styles.addTaskLabel}>Add Task</div>
             </div>
           </div>
