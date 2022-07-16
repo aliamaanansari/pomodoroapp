@@ -1,0 +1,37 @@
+:root {
+  --header-color: #4f3cf9;
+  --shadow-color: #a5a5a5;
+  --card-color: #f6f7f8;
+  --container-color: #fff;
+}
+/* .main-container {
+    height: 100vh;
+    background-color: var(--header-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-header-container {
+    color: var(--container-color);
+    margin: 1rem;
+} */
+/* .header-container {
+  height: 80vh;
+  width: 60vw;
+  background-color: var(--container-color);
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+  overflow-y: auto;
+} */
+/* .to-do-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+} */
+/* .btn-task {
+  margin-top: 0.5rem;
+  font-size: 20px;
+} */
