@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { useEffect, useReducer } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import './app.css'
+import Timer from './components/Timer'
+import TodoList from './components/TodoList'
+import { MainContextProvider } from './store/mainContext'
+import { initialState, reducer, types } from './store/reducer'
 
 function App() {
+  const [state, dispatch] = useReducer(reducer, initialState)
+  console.log({ state })
+
+  useEffect(() => {
+    dispatch({
+      type: types.IMPORT_TASK_FROM_LOCALSTORAGE,
+    })
+  }, [dispatch])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <MainContextProvider value={{ state, dispatch }}>
+        <Routes>
+          <Route path='/' element={<TodoList />} />
+          <Route path='/task/:taskId' element={<Timer />} />
+        </Routes>
+      </MainContextProvider>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
