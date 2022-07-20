@@ -1,0 +1,54 @@
+.cardWrapper {
+  width: 100%;
+  height: 8vh;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem 0rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: white;
+}
+.cardHolder {
+  width: 100%;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.cardHeading {
+  display: flex;
+  flex: 1;
+  color: #3c5898;
+}
+.icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  color: #3c5898;
+}
+.cardTimer {
+  justify-self: end;
+  cursor: pointer;
+  color: #3c5898;
+}
+.editBtn {
+  margin-right: 0.625rem;
+}
+
+.actionCTA {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+  font-size: 14px;
+  margin-left: 1rem;
+}
+.actionIcon {
+  margin-right: 0.25rem;
+  font-size: 1rem;
+}
